@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(255, 0, 0);
+    height: 2000px;
+}
+
+img {
+    width: 100%;
+}
+
+b {
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 3em;
+}
+
+/* Barra de navegacion */
+
+/* Celular */
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbarButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 80px;
+    list-style: none;
+    text-align: right;
+    padding: 50px 0;
+    width: 0;
+    height: 100vh;
+    transition: 0.3s;
+}
+
+nav ul li {
+    width: 0;
+    overflow: hidden;
+    margin: 0 0 10% 0;
+    opacity: 0;
+    visibility: visible;
+    transition: 0.3s;
+}
+nav ul li a{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+nav ul li a:hover,
+.active {
+    color: rgb(255, 0, 255)
+}
+
+.liAfter {
+    width: auto;
+    visibility: visible;
+    opacity: 1;
+}
+
+.navbarButtonsAfter {
+    width: auto;
+    padding: 5vh 0 0 0;
+    background-color: blue;
+    z-index: 1;
+}
+
+.navbarIcons {
+    width: 40px;
+    cursor: pointer;
+    margin: 0 5%;
+}
+
+
+/* PC */
+
+@media only screen and (min-width: 768px) {
+    nav {
+        padding: 0 20%;
+    }
+
+    .navbarIcons {
+        margin: 0%;
+    }
+
+    .navbarMenu {
+        display: none;
+    }
+
+    .navbarButtons {
+        position: relative;
+        top: 0;
+        height: auto;
+    }
+
+    nav ul li {
+        display: inline-block;
+        transition: none;
+        opacity: 1;
+        visibility: visible;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .navbarButtonsAfter {
+        background-color: rgb(36, 36, 36);
+        height: auto;
+    }
+
+    .liAfter {
+        margin: 0 7px;
+    }
+
+}
+
+/* Seccion bienvenida */
+
+/* Celular */
+.welcomeContainer{
+    position: relative;
+}
+.principalImg {
+    display: block;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.centredTextInImage {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
