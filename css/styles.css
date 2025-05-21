@@ -6,10 +6,23 @@
     font-weight: 500;
     color: white;
     text-decoration: none;
+    overflow-wrap: break-word;
+    word-break: break-word;
+
+}
+
+:root {
+    --primaryColor-3: #13110e;
+    --primaryColor-2: #2D2924;
+    --primaryColor-1: #4E4941;
+    --primaryColor0: #736B5F;
+    --primaryColor1: #998F80;
+    --primaryColor2: #C1B5A2;
+    --primaryColor3: #E6DDD0;
 }
 
 body {
-    background-color: rgb(80, 80, 80);
+    background-color: rgb(255, 255, 255);
     min-height: 100vh;
 }
 
@@ -19,6 +32,11 @@ img {
 
 b {
     text-decoration: underline;
+}
+
+.colorTitle {
+    color: var(--primaryColor-1);
+    font-weight: 700;
 }
 
 /* General */
@@ -53,10 +71,14 @@ p {
     font-weight: 300;
 }
 
+.container {
+    padding: 0 5vw;
+}
+
 
 /* PC */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
     h1 {
         font-size: 4em;
     }
@@ -81,12 +103,12 @@ p {
         font-size: 1.1em;
     }
 
-    a:hover{
+    a:hover {
         text-decoration: underline;
     }
 
     p {
-        font-size: 1em;
+        font-size: 1.125em;
     }
 }
 
@@ -113,5 +135,147 @@ p {
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Seccion titulo */
+
+/* Celular */
+.info {
+    background-color: var(--primaryColor3);
+    padding: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.infoDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+}
+
+.infoDescription>* {
+    flex: 1;
+}
+
+.infoDescription p {
+    font-size: 1.1em;
+    color: black;
+}
+
+/* PC */
+
+@media only screen and (min-width: 767px) {
+    .infoDescription {
+        flex-direction: row;
+        text-align: left;
+        padding: 0 12vw;
+        align-items: center;
+        gap: 0;
+    }
+
+}
+
+/* Seccion habitaciones */
+
+/* Celular */
+
+.roomsInfo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.roomsInfo img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.roomsDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vw;
+    gap: 12px;
+    padding: 6vw;
+}
+
+.roomsDescription>p {
+    color: black;
+}
+
+/* PC */
+
+@media only screen and (min-width: 767px) {
+    .roomsInfo {
+        flex-direction: row;
+    }
+
+    .roomsInfo img {
+        width: 50%;
+    }
+
+    .roomsDescription {
+        height: auto;
+    }
+}
+
+/* Seccion tarjetas */
+
+/* Celular */
+
+.infoCards {
+    background-color: var(--primaryColor3);
+    padding: 50px 5vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+}
+
+.infoCard>p::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 90%;
+    background: var(--primaryColor-2);
+    margin: 12px 0;
+}
+
+.infoCard p {
+    color: black;
+}
+
+.infoCard img {
+    width: 30px;
+}
+
+.infoCardTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.info>img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 767px) {
+    .cards {
+        flex-direction: row;
+    }
 }
