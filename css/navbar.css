@@ -25,7 +25,7 @@ nav {
     text-align: right;
     width: 250px;
     height: 100vh;
-    background-color: var(--primaryColor-2);
+    background-color: var(--primaryColor-950);
     transition: transform 1s ease;
     transform: translate(100%, 0);
 }

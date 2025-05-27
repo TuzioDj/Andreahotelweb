@@ -12,13 +12,17 @@
 }
 
 :root {
-    --primaryColor-3: #13110e;
-    --primaryColor-2: #2D2924;
-    --primaryColor-1: #4E4941;
-    --primaryColor0: #736B5F;
-    --primaryColor1: #998F80;
-    --primaryColor2: #C1B5A2;
-    --primaryColor3: #E6DDD0;
+    --primaryColor-50: #f4f4f2;
+    --primaryColor-100: #e3e3de;
+    --primaryColor-200: #cac7be;
+    --primaryColor-300: #aba799;
+    --primaryColor-400: #938c7c;
+    --primaryColor-500: #847d6e;
+    --primaryColor-600: #736b5f;
+    --primaryColor-700: #5c544c;
+    --primaryColor-800: #4f4944;
+    --primaryColor-950: #46403d;
+    --primaryColor-950: #272421;
 }
 
 body {
@@ -35,7 +39,7 @@ b {
 }
 
 .colorTitle {
-    color: var(--primaryColor-1);
+    color: var(--primaryColor-700);
     font-weight: 700;
 }
 
@@ -75,10 +79,12 @@ p {
     padding: 0 5vw;
 }
 
-
+.textCenter{
+    text-align: center;
+}
 /* PC */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
     h1 {
         font-size: 4em;
     }
@@ -112,6 +118,86 @@ p {
     }
 }
 
+/* Botones */
+
+/* Celular */
+
+.button {
+    text-transform: uppercase;
+}
+
+.button:hover .buttonSlideShowText {
+    margin-left: 65px;
+}
+
+.buttonSwipeLeft {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: fit-content;
+    padding: 8px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonSwipeLeft::before {
+    content: "";
+    transform: translateX(-101%);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 140%;
+    width: 240%;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonSwipeLeft p {
+    color: var(--primaryColor-700);
+    z-index: 2;
+    position: relative;
+    font-size: 0.8em;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+}
+
+.buttonSwipeLeft:hover p {
+    color: rgb(255, 255, 255);
+}
+
+.buttonSwipeLeft:hover::before {
+    transform: translateX(-50%);
+}
+
+.buttonSwipeLeft--primaryColor-700 {
+    color: var(--primaryColor-700);
+    border: 2px solid var(--primaryColor-700);
+}
+
+.buttonSwipeLeft--primaryColor-700::before {
+    background-color: var(--primaryColor-700);
+}
+
+.buttonLeft {
+    margin-left: auto;
+}
+
+.buttonRight {
+    margin-right: auto;
+}
+
+.buttonCenter {
+    margin: 0 auto;
+}
+
+/* PC */
+@media only screen and (min-width: 769px) {
+    .buttonSwipeLeft p {
+        font-size: 0.9em;
+    }
+}
+
 /* Seccion bienvenida */
 
 /* Celular */
@@ -142,13 +228,13 @@ p {
 
 /* Celular */
 .info {
-    background-color: var(--primaryColor3);
+    background-color: var(--primaryColor-100);
     padding: 5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 1em;
 }
 
 .infoDescription {
@@ -169,7 +255,7 @@ p {
 
 /* PC */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
     .infoDescription {
         flex-direction: row;
         text-align: left;
@@ -180,9 +266,21 @@ p {
 
 }
 
+/* Habitaciones */
+
+/* Celular */
+
+.infoTitle {
+    text-align: center;
+    margin: 50px;
+}
+
+
+
 /* Seccion habitaciones */
 
 /* Celular */
+
 
 .roomsInfo {
     display: flex;
@@ -190,8 +288,13 @@ p {
     width: 100%;
 }
 
-.roomsInfo img {
+.imgRelationAspect1-1 {
     aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.imgRelationAspect4-3 {
+    aspect-ratio: 4/3;
     object-fit: cover;
 }
 
@@ -199,18 +302,24 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vw;
+    min-height: 100vw;
     gap: 12px;
     padding: 6vw;
 }
 
-.roomsDescription>p {
-    color: black;
+.oneRoomDescription {
+    text-align: center;
+    justify-content: space-around;
+    min-height: 75vw;
+}
+
+.roomsDescription p {
+    color: var(--primaryColor-950);
 }
 
 /* PC */
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 769px) {
     .roomsInfo {
         flex-direction: row;
     }
@@ -220,8 +329,15 @@ p {
     }
 
     .roomsDescription {
+        min-height: auto;
         height: auto;
     }
+
+    .roomsInfo:nth-child(even) {
+        flex-direction: row-reverse;
+        /* alternar imagen derecha/izquierda */
+    }
+
 }
 
 /* Seccion tarjetas */
@@ -229,7 +345,7 @@ p {
 /* Celular */
 
 .infoCards {
-    background-color: var(--primaryColor3);
+    background-color: var(--primaryColor-100);
     padding: 50px 5vw;
     text-align: center;
     display: flex;
@@ -244,12 +360,18 @@ p {
     text-align: left;
 }
 
+.infoCard h4 {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+}
+
 .infoCard>p::before {
     content: "";
     display: block;
     height: 1px;
     width: 90%;
-    background: var(--primaryColor-2);
+    background: var(--primaryColor-950);
     margin: 12px 0;
 }
 
@@ -274,7 +396,7 @@ p {
     object-fit: cover;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 1200px) {
     .cards {
         flex-direction: row;
     }

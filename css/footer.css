@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 25px;
-    background-color: var(--primaryColor-2);
+    background-color: var(--primaryColor-950);
 }
 
 .footLeft {
