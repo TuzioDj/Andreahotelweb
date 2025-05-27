@@ -76,12 +76,13 @@ p {
 }
 
 .container {
-    padding: 0 5vw;
+    padding: 5vw;
 }
 
-.textCenter{
+.textCenter {
     text-align: center;
 }
+
 /* PC */
 
 @media only screen and (min-width: 769px) {
@@ -209,7 +210,7 @@ p {
 .principalImg {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 85vh;
     object-fit: cover;
 }
 
@@ -224,17 +225,32 @@ p {
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
 }
 
+.scrollIcon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.7));
+}
+
 /* Seccion titulo */
 
 /* Celular */
 .info {
-    background-color: var(--primaryColor-100);
-    padding: 5vw;
+    background-color: var(--primaryColor-50);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1em;
+}
+
+.compactInfo {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    gap: 12px;
 }
 
 .infoDescription {
@@ -250,7 +266,7 @@ p {
 
 .infoDescription p {
     font-size: 1.1em;
-    color: black;
+    color: var(--primaryColor-950);
 }
 
 /* PC */
@@ -335,7 +351,6 @@ p {
 
     .roomsInfo:nth-child(even) {
         flex-direction: row-reverse;
-        /* alternar imagen derecha/izquierda */
     }
 
 }
@@ -345,8 +360,8 @@ p {
 /* Celular */
 
 .infoCards {
-    background-color: var(--primaryColor-100);
-    padding: 50px 5vw;
+    background-color: var(--primaryColor-50);
+    padding: 75px 5vw;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -376,7 +391,7 @@ p {
 }
 
 .infoCard p {
-    color: black;
+    color: var(--primaryColor-950);
 }
 
 .infoCard img {
