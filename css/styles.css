@@ -332,7 +332,7 @@ li {
     justify-content: center;
     min-height: 100vw;
     gap: 12px;
-    padding: 5vw;
+    padding: 7vw;
 }
 
 .location .roomsDescription {
@@ -369,6 +369,7 @@ li {
     .roomsDescription {
         min-height: auto;
         height: auto;
+        padding: 5vw;
     }
 
     .roomsInfo:nth-child(even) {
