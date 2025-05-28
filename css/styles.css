@@ -437,3 +437,7 @@ li {
     height: 500px;
     object-fit: cover;
 }
+
+.contact .roomsDescription{
+    justify-content: space-around;
+}

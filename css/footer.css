@@ -82,6 +82,7 @@
 }
 
 .whatsapp {
+    z-index: 100;
     width: 90px;
     position: fixed;
     right: 0;
