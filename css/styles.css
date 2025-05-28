@@ -25,6 +25,11 @@
     --primaryColor-950: #272421;
 }
 
+iframe {
+    border: none;
+    width: --webkit-fill-available;
+}
+
 body {
     background-color: rgb(255, 255, 255);
     min-height: 100vh;
@@ -70,7 +75,8 @@ a {
     font-size: 1.1em;
 }
 
-p {
+p,
+li {
     font-size: 1em;
     font-weight: 300;
 }
@@ -82,6 +88,7 @@ p {
 .textCenter {
     text-align: center;
 }
+
 
 /* PC */
 
@@ -114,7 +121,8 @@ p {
         text-decoration: underline;
     }
 
-    p {
+    p,
+    li {
         font-size: 1.125em;
     }
 }
@@ -292,7 +300,6 @@ p {
 }
 
 
-
 /* Seccion habitaciones */
 
 /* Celular */
@@ -314,13 +321,22 @@ p {
     object-fit: cover;
 }
 
+.imgRelationAspect3-4 {
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
 .roomsDescription {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 100vw;
     gap: 12px;
-    padding: 6vw;
+    padding: 5vw;
+}
+
+.location .roomsDescription{
+    min-height: auto;
 }
 
 .oneRoomDescription {
@@ -329,9 +345,15 @@ p {
     min-height: 75vw;
 }
 
-.roomsDescription p {
+.roomsDescription p,
+.roomsDescription li {
     color: var(--primaryColor-950);
 }
+
+.roomsDescription ul {
+    list-style-position: inside;
+}
+
 
 /* PC */
 
@@ -351,6 +373,11 @@ p {
 
     .roomsInfo:nth-child(even) {
         flex-direction: row-reverse;
+    }
+
+    .column2-3 {
+        min-width: 66.6%;
+        height: calc(100dvh - 100px);
     }
 
 }
@@ -409,10 +436,4 @@ p {
     width: 80%;
     height: 500px;
     object-fit: cover;
-}
-
-@media only screen and (min-width: 1200px) {
-    .cards {
-        flex-direction: row;
-    }
 }
