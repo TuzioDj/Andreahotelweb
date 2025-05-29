@@ -332,7 +332,7 @@ li {
     justify-content: center;
     min-height: 100vw;
     gap: 12px;
-    padding: 7vw;
+    padding: 7  vw;
 }
 
 .location .roomsDescription {
@@ -448,4 +448,10 @@ li {
 
 .contact .roomsDescription {
     justify-content: space-around;
+}
+
+@media only screen and (min-width: 1200px) {
+    .cards {
+        flex-direction: row;
+    }
 }
