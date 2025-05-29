@@ -92,7 +92,7 @@ li {
 
 /* PC */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     h1 {
         font-size: 4em;
     }
@@ -201,7 +201,7 @@ li {
 }
 
 /* PC */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     .buttonSwipeLeft p {
         font-size: 0.9em;
     }
@@ -279,7 +279,7 @@ li {
 
 /* PC */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     .infoDescription {
         flex-direction: row;
         text-align: left;
@@ -332,7 +332,7 @@ li {
     justify-content: center;
     min-height: 100vw;
     gap: 12px;
-    padding: 7  vw;
+    padding: 7vw;
 }
 
 .location .roomsDescription {
@@ -357,7 +357,7 @@ li {
 
 /* PC */
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     .roomsInfo {
         flex-direction: row;
     }
