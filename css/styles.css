@@ -288,6 +288,10 @@ li {
         gap: 0;
     }
 
+    .infoDescription .colorTitle{
+        padding-right: 20px;
+    }
+
 }
 
 /* Habitaciones */
@@ -352,6 +356,9 @@ li {
 
 .roomsDescription ul {
     list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 
