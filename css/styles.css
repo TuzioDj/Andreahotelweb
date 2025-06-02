@@ -71,12 +71,9 @@ h5 {
     font-size: 1.25em;
 }
 
-a {
-    font-size: 1.1em;
-}
-
 p,
-li {
+li,
+a {
     font-size: 1em;
     font-weight: 300;
 }
@@ -87,6 +84,11 @@ li {
 
 .textCenter {
     text-align: center;
+}
+
+.remarkedLink {
+    font-weight: 400;
+    text-decoration: underline;
 }
 
 
@@ -233,6 +235,12 @@ li {
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.7);
 }
 
+.centredTextInImage img {
+    width: 18em;
+    margin-bottom: 6px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.7));
+}
+
 .scrollIcon {
     position: absolute;
     bottom: 0;
@@ -240,6 +248,20 @@ li {
     transform: translate(-50%, -50%);
     width: 50px;
     filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.7));
+}
+
+/* PC */
+
+@media only screen and (min-width: 768px) {
+
+    .centredTextInImage img {
+        width: 30em;
+    }
+
+    .centredTextInImage h2 {
+        font-size: 3.5em;
+    }
+
 }
 
 /* Seccion titulo */
@@ -288,7 +310,7 @@ li {
         gap: 0;
     }
 
-    .infoDescription .colorTitle{
+    .infoDescription .colorTitle {
         padding-right: 20px;
     }
 
@@ -336,7 +358,7 @@ li {
     justify-content: center;
     min-height: 100vw;
     gap: 12px;
-    padding: 7vw;
+    margin: 7vw;
 }
 
 .location .roomsDescription {
@@ -350,7 +372,8 @@ li {
 }
 
 .roomsDescription p,
-.roomsDescription li {
+.roomsDescription li,
+.roomsDescription a {
     color: var(--primaryColor-950);
 }
 
@@ -359,6 +382,19 @@ li {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.contact .roomsDescription {
+    justify-content: space-around;
+    min-height: 50vw;
+}
+
+.diagonalTexts:nth-child(even) {
+    text-align: end;
+}
+
+.contact .roomsInfo img {
+    display: none;
 }
 
 
@@ -376,7 +412,7 @@ li {
     .roomsDescription {
         min-height: auto;
         height: auto;
-        padding: 5vw;
+        margin: 5vw;
     }
 
     .roomsInfo:nth-child(even) {
@@ -386,6 +422,15 @@ li {
     .column2-3 {
         min-width: 50%;
     }
+
+    .contact .roomsDescription {
+        min-height: auto;
+    }
+
+    .contact .roomsInfo img {
+        display: block;
+    }
+
 
 }
 
@@ -453,9 +498,6 @@ li {
     object-fit: cover;
 }
 
-.contact .roomsDescription {
-    justify-content: space-around;
-}
 
 @media only screen and (min-width: 1200px) {
     .cards {
