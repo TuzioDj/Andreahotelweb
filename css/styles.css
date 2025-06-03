@@ -71,6 +71,7 @@ h5 {
     font-size: 1.25em;
 }
 
+
 p,
 li,
 a {
@@ -91,21 +92,21 @@ a {
     text-decoration: underline;
 }
 
-.logoTitle{
+.logoTitle {
     font-size: 1em;
 }
 
 .visuallyHidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  clip-path: inset(100%);
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    clip-path: inset(100%);
 }
 
 
@@ -311,7 +312,8 @@ a {
     flex: 1;
 }
 
-.infoDescription p, .compactInfo p{
+.infoDescription p,
+.compactInfo p {
     font-size: 1.1em;
     color: var(--primaryColor-950);
 }
@@ -376,13 +378,14 @@ a {
     min-height: 100vw;
     gap: 12px;
     margin: 7vw;
+    box-sizing: border-box;
 }
 
 .location .roomsDescription {
     min-height: auto;
 }
 
-.location h2{
+.location h3 {
     font-size: 2.25em;
 }
 
@@ -390,12 +393,17 @@ a {
     text-align: center;
     justify-content: space-around;
     min-height: 75vw;
+    box-sizing: border-box;
 }
 
 .roomsDescription p,
 .roomsDescription li,
 .roomsDescription a {
     color: var(--primaryColor-950);
+}
+
+.roomsDescription h4{
+    color: var(--primaryColor-700);
 }
 
 .roomsDescription ul {
@@ -483,11 +491,14 @@ a {
     text-align: left;
 }
 
-.infoCard h3 {
+.infoCards>h3 {
+    font-size: 2.5em;
+}
+
+.infoCard h4 {
     min-height: 60px;
     display: flex;
     align-items: center;
-    font-size: 1.5em;
 }
 
 .infoCard>p::before {
@@ -520,8 +531,56 @@ a {
     object-fit: cover;
 }
 
+@media only screen and (min-width: 768px) {
+    .infoCards>h3 {
+        font-size: 3em;
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     .cards {
         flex-direction: row;
+    }
+}
+
+.hToh5 {
+    font-size: 1.25em;
+}
+
+.hToh4 {
+    font-size: 1.5em;
+}
+
+.hToh3 {
+    font-size: 2em;
+}
+
+.hToh2 {
+    font-size: 2.5em;
+}
+
+.hToh1 {
+    font-size: 2.5em;
+}
+
+@media only screen and (min-width: 768px) {
+    .hToh5 {
+        font-size: 1.2em;
+    }
+
+    .hToh4 {
+        font-size: 1.5em;
+    }
+
+    .hToh3 {
+        font-size: 2em;
+    }
+
+    .hToh2 {
+        font-size: 3em;
+    }
+
+    .hToh1 {
+        font-size: 3em;
     }
 }
