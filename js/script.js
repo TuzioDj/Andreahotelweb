@@ -11,7 +11,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.2 // Altura de ejecucion de fade-in
+    threshold: 0.15 // Altura de ejecucion de fade-in
 });
 
 

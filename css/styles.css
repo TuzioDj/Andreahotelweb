@@ -380,7 +380,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 100vw;
+    min-height: 50vw;
     gap: 12px;
     margin: 7vw;
     box-sizing: border-box;
@@ -397,7 +397,6 @@ a {
 .oneRoomDescription {
     text-align: center;
     justify-content: space-around;
-    min-height: 75vw;
     box-sizing: border-box;
 }
 
