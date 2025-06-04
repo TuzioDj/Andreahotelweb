@@ -10,6 +10,9 @@
     word-break: break-word;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 :root {
     --primaryColor-50: #f4f4f2;
@@ -585,4 +588,15 @@ a {
     .hToh1 {
         font-size: 3em;
     }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
