@@ -32,7 +32,6 @@ document.querySelectorAll('.carousel').forEach(carousel => {
         
         currentIndex = index;
         current = index;
-        console.log(currentIndex);
         
         dotsContainer.querySelectorAll('.carouselDot').forEach((dot, i) => {
             dot.classList.toggle('active', i === currentIndex);
