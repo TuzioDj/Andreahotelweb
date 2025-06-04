@@ -13,6 +13,7 @@
         content="Una propuesta para cada necesidad, en plena zona residencial a 2 cuadras del centro comercial y con la atención familiar y esmerada que lo caracteriza con más de 30 años de trayectoria">
     <link rel="canonical" href="https://www.andreahotel.com.ar/">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carousel.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900" rel="stylesheet">
@@ -80,8 +81,23 @@
 
         <section>
 
+
+
+
+
+
             <div class="roomsInfo">
-                <img class="imgRelationAspect4-3" src="media/images/habitacion1.jpeg" alt="Frente de hotel">
+                <div class="carousel imgRelationAspect4-3">
+                    <div class="carouselTrack">
+                        <img src="media/images/habitacion1.jpeg" alt="Frente de hotel">
+                        <img src="media/images/habitacion2.jpeg" alt="Frente de hotel">
+                        <img src="media/images/habitacion3.jpg" alt="Frente de hotel">
+                    </div>
+                    <button class="carouselButton prev">&#10094;</button>
+                    <button class="carouselButton next">&#10095;</button>
+                    <div class="carouselDots"></div>
+                </div>
+
                 <div class="oneRoomDescription roomsDescription">
                     <h4 class="colorTitle hToh3">Habitación Simple</h4>
 
@@ -95,6 +111,14 @@
                     </a>
                 </div>
             </div>
+
+
+
+
+
+
+
+
             <div class="roomsInfo">
                 <img class="imgRelationAspect4-3" src="media/images/habitacion2.jpeg" alt="Frente de hotel">
                 <div class="oneRoomDescription roomsDescription">
@@ -203,6 +227,7 @@
         </div>
     </footer>
     <script src="js/navbar.js"></script>
+    <script src="js/carousel.js"></script>
 </body>
 
 </html>

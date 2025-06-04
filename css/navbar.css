@@ -26,7 +26,7 @@ nav {
     width: 250px;
     height: 100vh;
     background-color: var(--primaryColor-950);
-    transition: transform 1s ease;
+    transition: transform 1s ease, box-shadow 1s ease;
     transform: translate(100%, 0);
 }
 
