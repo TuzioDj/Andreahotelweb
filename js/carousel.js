@@ -5,8 +5,9 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     const images = track.querySelectorAll('img');
     const prevBtn = carousel.querySelector('.prev');
     const nextBtn = carousel.querySelector('.next');
-    const dotsContainer = document.querySelector('.carouselDots');
+    const dotsContainer = carousel.querySelector('.carouselDots');
 
+    let currentIndex = 0;
     let current = 0;
     let startX = 0;
     let endX = 0;
@@ -19,18 +20,37 @@ document.querySelectorAll('.carousel').forEach(carousel => {
     }
 
     function nextSlide() {
-        current = (current + 1) % images.length;
-        updateCarousel();
+        goToSlide((currentIndex + 1) % images.length);
     }
 
     function prevSlide() {
-        current = (current - 1 + images.length) % images.length;
+        goToSlide((currentIndex - 1 + images.length) % images.length);
+
+    }
+
+    function goToSlide(index) {
+        
+        currentIndex = index;
+        current = index;
+        console.log(currentIndex);
+        
+        dotsContainer.querySelectorAll('.carouselDot').forEach((dot, i) => {
+            dot.classList.toggle('active', i === currentIndex);
+        });
         updateCarousel();
     }
 
     function startAutoSlide() {
         autoSlide = setInterval(nextSlide, 3000)
     }
+
+    images.forEach((_, index) => {
+        const dot = document.createElement('div');
+        dot.classList.add('carouselDot');
+        if (index === 0) dot.classList.add('active');
+        dot.addEventListener('click', () => goToSlide(index));
+        dotsContainer.appendChild(dot);
+    });
 
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
