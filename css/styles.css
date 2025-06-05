@@ -306,18 +306,18 @@ a {
     gap: 12px;
 }
 
-.infoDescription {
+.infoColumns {
     display: flex;
     flex-direction: column;
     gap: 12px;
     text-align: center;
 }
 
-.infoDescription>* {
+.infoColumns>* {
     flex: 1;
 }
 
-.infoDescription p,
+.infoColumns p,
 .compactInfo p {
     font-size: 1.1em;
     color: var(--primaryColor-950);
@@ -326,7 +326,7 @@ a {
 /* PC */
 
 @media only screen and (min-width: 768px) {
-    .infoDescription {
+    .infoColumns {
         flex-direction: row;
         text-align: left;
         padding: 0 12vw;
@@ -334,7 +334,7 @@ a {
         gap: 0;
     }
 
-    .infoDescription .colorTitle {
+    .infoColumns .colorTitle {
         padding-right: 20px;
     }
 
@@ -355,7 +355,7 @@ a {
 /* Celular */
 
 
-.roomsInfo {
+.columns {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -376,7 +376,7 @@ a {
     object-fit: cover;
 }
 
-.roomsDescription {
+.descriptionLeft {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -386,7 +386,7 @@ a {
     box-sizing: border-box;
 }
 
-.location .roomsDescription {
+.location .descriptionLeft {
     min-height: auto;
 }
 
@@ -394,30 +394,30 @@ a {
     font-size: 2.25em;
 }
 
-.oneRoomDescription {
+.descriptionCenter {
     text-align: center;
     justify-content: space-around;
     box-sizing: border-box;
 }
 
-.roomsDescription p,
-.roomsDescription li,
-.roomsDescription a {
+.descriptionLeft p,
+.descriptionLeft li,
+.descriptionLeft a {
     color: var(--primaryColor-950);
 }
 
-.roomsDescription h4{
+.descriptionLeft h4{
     color: var(--primaryColor-700);
 }
 
-.roomsDescription ul {
+.descriptionLeft ul {
     list-style-position: inside;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.contact .roomsDescription {
+.contact .descriptionLeft {
     justify-content: space-around;
     min-height: 50vw;
 }
@@ -426,30 +426,25 @@ a {
     text-align: end;
 }
 
-.contact .roomsInfo img {
-    display: none;
-}
-
-
 /* PC */
 
 @media only screen and (min-width: 768px) {
-    .roomsInfo {
+    .columns {
         flex-direction: row;
+        max-height: calc(100vh - 100px);
     }
 
-    .roomsInfo img {
+    .columns img {
         width: 50%;
-        max-width: calc(100vh - 100px);
     }
 
-    .roomsDescription {
+    .descriptionLeft {
         min-height: auto;
         height: auto;
         margin: 5vw;
     }
 
-    .roomsInfo:nth-child(even) {
+    .columns:nth-child(even) {
         flex-direction: row-reverse;
     }
 
@@ -457,14 +452,9 @@ a {
         min-width: 50%;
     }
 
-    .contact .roomsDescription {
+    .contact .descriptionLeft {
         min-height: auto;
     }
-
-    .contact .roomsInfo img {
-        display: block;
-    }
-
 
 }
 

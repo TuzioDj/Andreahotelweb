@@ -67,7 +67,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .roomsInfo .carousel {
+    .columns .carousel {
         width: 50%;
     }
 }
