@@ -10,7 +10,8 @@
     word-break: break-word;
 
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -240,7 +241,7 @@ a {
 }
 
 .principalImg {
-    filter: blur(3px);
+    filter: blur(3px) brightness(0.8);
     display: block;
     width: 100%;
     height: 100dvh;
@@ -376,17 +377,17 @@ a {
     object-fit: cover;
 }
 
-.descriptionLeft {
+.columnTextLeft {
     display: flex;
     flex-direction: column;
     justify-content: center;
     min-height: 50vw;
     gap: 12px;
-    margin: 7vw;
+    padding: 7vw;
     box-sizing: border-box;
 }
 
-.location .descriptionLeft {
+.location .columnTextLeft {
     min-height: auto;
 }
 
@@ -394,32 +395,32 @@ a {
     font-size: 2.25em;
 }
 
-.descriptionCenter {
+.columnTextCenter {
     text-align: center;
     justify-content: space-around;
     box-sizing: border-box;
 }
 
-.descriptionLeft p,
-.descriptionLeft li,
-.descriptionLeft a {
+.columnTextLeft p,
+.columnTextLeft li,
+.columnTextLeft a {
     color: var(--primaryColor-950);
 }
 
-.descriptionLeft h4{
+.columnTextLeft h4 {
     color: var(--primaryColor-700);
 }
 
-.descriptionLeft ul {
+.columnTextLeft ul {
     list-style-position: inside;
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.contact .descriptionLeft {
+.contact .columnTextLeft {
     justify-content: space-around;
-    min-height: 50vw;
+    min-height: 100vw;
 }
 
 .diagonalTexts:nth-child(even) {
@@ -438,10 +439,10 @@ a {
         width: 50%;
     }
 
-    .descriptionLeft {
+    .columnTextLeft {
         min-height: auto;
         height: auto;
-        margin: 5vw;
+        padding: 5vw;
     }
 
     .columns:nth-child(even) {
@@ -452,8 +453,8 @@ a {
         min-width: 50%;
     }
 
-    .contact .descriptionLeft {
-        min-height: auto;
+    .contact .columnTextLeft {
+        min-height: 100%;
     }
 
 }
@@ -538,6 +539,106 @@ a {
     }
 }
 
+/* Formulario de contacto */
+
+.contactFormContainer {
+    width: 100%;
+    background-color: var(--primaryColor-50);
+    flex-shrink: 0;
+}
+
+.contactForm {
+    width: 100%;
+}
+
+.contactFormRow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+    gap: 32px;
+}
+
+.contactFormInput {
+    width: 100%;
+    height: 2em;
+    border: none;
+    background: none;
+    position: relative;
+}
+
+.contactFormInput input,
+.contactFormInput textarea {
+    color: var(--primaryColor-700);
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--primaryColor-400);
+    background: none;
+}
+
+.contactFormInput textarea {
+    resize: none;
+}
+
+.textarea {
+    height: 3em;
+}
+
+.contactFormInput label {
+  position: absolute;
+  font-size: 1em;
+  bottom: 10px;
+  left: 0;
+  pointer-events: none;
+  transition: 0.3s ease;
+  color: var(--primaryColor-400);
+}
+
+.contactFormInput input:focus ~ label,
+.contactFormInput input:valid ~ label {
+  transform: translateY(-1.5em);
+  color: var(--primaryColor-700);
+  font-size: 0.8em;
+}
+.contactFormInput textarea:focus ~ label,
+.contactFormInput textarea:valid ~ label {
+  transform: translateY(-3.1em);
+  color: var(--primaryColor-700);
+  font-size: 0.8em;
+}
+
+.contactFormUnderline {
+    width: 100%;
+    height: 2px;
+    background: var(--primaryColor-700);
+    position: absolute;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: 0.3s ease;
+}
+
+.contactFormInput input:focus~.contactFormUnderline,
+.contactFormInput input:valid~.contactFormUnderline,
+.contactFormInput textarea:focus~.contactFormUnderline,
+.contactFormInput textarea:valid~.contactFormUnderline {
+    transform: scaleX(1);
+}
+
+@media only screen and (min-width: 768px) {
+    .contactFormContainer{
+        width: 50%;
+        aspect-ratio: 1 / 1;
+        justify-content: center;
+    }
+    .contactFormRow{
+
+    }
+}
+
+
 .hToh5 {
     font-size: 1.25em;
 }
@@ -581,12 +682,12 @@ a {
 }
 
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
