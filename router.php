@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 define('BASE_URL', '//' . $_SERVER['SERVER_NAME'] . ':' . $_SERVER['SERVER_PORT'] . dirname($_SERVER['PHP_SELF']) . '/');
 
@@ -11,7 +14,7 @@ if (!empty($_GET['action'])) {
 $params = explode('/', $action);
 
 // MUESTRO LA BARRA DE NAVEGACION POR DEFECTO
-include 'templates/header.php';
+include 'docs/header.php';
 
 
 
@@ -19,9 +22,23 @@ include 'templates/header.php';
 switch ($params[0]) {
     // MUESTREO DE PRODUCTOS
     case 'inicio':
-        include 'templates/footer.php';
+        include 'docs/inicio.php';
+        include 'docs/footer.php';
+        break;
+    case 'habitaciones':
+        include 'docs/habitaciones.php';
+        include 'docs/footer.php';
+        break;
+    case 'ubicacion':
+        include 'docs/ubicacion.php';
+        include 'docs/footer.php';
+        break;
+    case 'contacto':
+        include 'docs/contacto.php';
+        include 'docs/footer.php';
         break;
     default:
-        echo ('404 Page not found');
+        include 'docs/inicio.php';
+        include 'docs/footer.php';
         break;
 }

@@ -24,3 +24,4 @@ const delayImg = document.querySelector('.delay-img');
     const offset = window.scrollY * 0.4; // Más o menos delay
     delayImg.style.transform = `translateY(${offset}px)`;
   });
+

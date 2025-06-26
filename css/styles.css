@@ -552,6 +552,7 @@ a {
 }
 
 .contactFormRow {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -590,7 +591,7 @@ a {
 .contactFormInput label {
   position: absolute;
   font-size: 1em;
-  bottom: 10px;
+  top: 0;
   left: 0;
   pointer-events: none;
   transition: 0.3s ease;
@@ -598,16 +599,12 @@ a {
 }
 
 .contactFormInput input:focus ~ label,
-.contactFormInput input:valid ~ label {
-  transform: translateY(-1.5em);
-  color: var(--primaryColor-700);
-  font-size: 0.8em;
-}
+.contactFormInput input.notEmpty ~ label,
 .contactFormInput textarea:focus ~ label,
-.contactFormInput textarea:valid ~ label {
-  transform: translateY(-3.1em);
+.contactFormInput textarea.notEmpty ~ label {
+  transform: translateY(-100%);
   color: var(--primaryColor-700);
-  font-size: 0.8em;
+  font-size: 0.9em;
 }
 
 .contactFormUnderline {
@@ -621,10 +618,42 @@ a {
 }
 
 .contactFormInput input:focus~.contactFormUnderline,
-.contactFormInput input:valid~.contactFormUnderline,
+.contactFormInput input.notEmpty~.contactFormUnderline,
 .contactFormInput textarea:focus~.contactFormUnderline,
-.contactFormInput textarea:valid~.contactFormUnderline {
+.contactFormInput textarea.notEmpty~.contactFormUnderline {
     transform: scaleX(1);
+}
+
+.contactFormInput input.hasError~.contactFormUnderline{
+    background: red;
+}
+.contactFormInput label.hasError{
+    color: red !important;
+}
+
+.contactFormInput .errorText{
+    margin-top: 2px;
+    color: red;
+    text-align: left;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.contactForm #formStatus{
+    position: absolute;
+    bottom: 0;
+    transform: translateY(110%);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.8em;
+
+}
+
+.contactForm #formStatus.success{
+    color: green;
+}
+.contactForm #formStatus.error{
+    color: red;
 }
 
 @media only screen and (min-width: 768px) {
@@ -634,7 +663,8 @@ a {
         justify-content: center;
     }
     .contactFormRow{
-
+        flex-direction: row;
+        gap: 16px;
     }
 }
 

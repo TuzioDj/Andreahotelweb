@@ -73,31 +73,48 @@
         <section>
             <div class="columns">
                 <div class="contactFormContainer columnTextLeft columnTextCenter">
-                    <h3 class="colorTitle">Contactanos</h3>
-                    <form class="contactForm" action="#">
+                    <h3 class="colorTitle">¿Tenes alguna duda?</h3>
+                    <form id="contactForm" class="contactForm">
+                        <input type="text" name="website" id="website" style="display: none;" tabindex="-1" autocomplete="off">
                         <div class="contactFormRow">
                             <div class="contactFormInput">
-                                <input type="text" required id="firstname" />
+                                <input name="firstname" type="text" id="firstname" />
                                 <div class="contactFormUnderline"></div>
                                 <label for="firstname">Nombre</label>
                             </div>
                             <div class="contactFormInput">
-                                <input type="text" required id="email" />
+                                <input name="lastname" type="text" id="lastname" />
                                 <div class="contactFormUnderline"></div>
-                                <label for="email">Email</label>
+                                <label for="lastname">Apellido</label>
                             </div>
                         </div>
                         <div class="contactFormRow">
-                            <div class="contactFormInput textarea">
-                                <textarea required></textarea>
+                            <div class="contactFormInput">
+                                <input name="email" type="email" id="email" />
                                 <div class="contactFormUnderline"></div>
-                                <label for="">Mensaje</label>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="contactFormInput">
+                                <input name="repeatEmail" type="email" id="repeatEmail" />
+                                <div class="contactFormUnderline"></div>
+                                <label for="repeatEmail">Repetir email</label>
+                            </div>
+                        </div>
+
+                        <div class="contactFormRow">
+                            <div class="contactFormInput textarea">
+                                <textarea name="message" id="message"></textarea>
+                                <div class="contactFormUnderline"></div>
+                                <label for="message">Mensaje</label>
                             </div>
                         </div>
                         <div class="contactFormRow">
                             <div>
-                                <button class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700"><p>Enviar mensaje</p></button>
+                                <button type="submit" class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700">
+                                    <p>Enviar mensaje</p>
+                                </button>
                             </div>
+                            <p id="formStatus"></p>
                         </div>
                     </form>
                 </div>
@@ -164,6 +181,7 @@
             <p>Página hecha por <a href="https://www.instagram.com/tuziodj/">Tuzio</a></p>
         </div>
     </footer>
+    <script src="js/contact.js"></script>
     <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/imgCards.js"></script>
