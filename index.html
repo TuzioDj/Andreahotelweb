@@ -12,9 +12,10 @@
     <meta name="description"
         content="Una propuesta para cada necesidad, en plena zona residencial y con la calida atención que lo caracteriza hace más de 30 años de trayectoria">
     <link rel="canonical" href="https://www.andreahotel.com.ar/">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900" rel="stylesheet">
     <script type="application/ld+json">
     {
@@ -59,14 +60,14 @@
     <main>
         <section id="welcome">
             <div class="welcomeContainer">
-                <img class="principalImg delay-img" src="media/images/frente-2.jpg" alt="Habitacion bienvenida">
+                <img class="principalImg delay-img" src="./media/images/photos/Inicio/frente.webp" alt="Habitacion bienvenida">
                 <div class="centredTextInImage">
                     <h1 class="logoTitle fade-in">
-                        <img src="media/images/logo.svg" alt="Andrea hotel. Estilo, descanso y ubicación ideal">
+                        <img src="./media/images/logo.svg" alt="Andrea hotel. Estilo, descanso y ubicación ideal">
                     </h1>
                     <h5 class="fade-in">Estilo, descanso y ubicación ideal</h5>
                 </div>
-                <img src="media/images/arrowCircleDown.svg" alt="Scroll" class="scrollIcon">
+                <img src="./media/images/arrowCircleDown.svg" alt="Scroll" class="scrollIcon">
             </div>
         </section>
 
@@ -80,12 +81,20 @@
         </section>
 
         <section class="columns">
-            <img class="imgRelationAspect1-1" src="media/images/frenteHotel.jpg" alt="Frente de hotel">
+            <div class="carousel imgRelationAspect1-1 fade-in">
+                <div class="carouselTrack">
+                    <img src="media/images/photos/Inicio/DSC_5273.webp" alt="Frente de hotel">
+                    <img src="media/images/photos/Inicio/DSC_5239.webp" alt="Frente de hotel">
+                    <img src="media/images/photos/Inicio/DSC_4663-HDR.webp" alt="Frente de hotel">
+                </div>
+                <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
+                <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
+                <div class="carouselDots"></div>
+            </div>
             <div class="columnTextLeft">
                 <h2 class="colorTitle fade-in">Las mejores habitaciones de la ciudad</h2>
-                <p class="fade-in">Espacios renovados, diseñados para ofrecer descanso, estilo y funcionalidad.
-                    Cada habitación, una invitación al confort.</p>
-                <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 fade-in" href="habitaciones.html">
+                <p class="fade-in">Espacios renovados, diseñados para el máximo confort. Cada habitación es una invitación al descanso, con estilo y funcionalidad pensados para vos. Y para empezar el día de la mejor manera, te espera un desayuno único, preparado para deleitar todos tus sentidos. Tu experiencia ideal te espera.</p>
+                <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 fade-in" href="habitaciones">
                     <p>Ver mas</p>
                 </a>
             </div>
@@ -97,7 +106,7 @@
 
                 <div class="infoCard fade-in">
                     <div class="infoCardTitle">
-                        <img src="media/images/location.svg" alt="Foto descriptiva">
+                        <img src="./media/images/location.svg" alt="Foto descriptiva">
                         <h4 class="colorTitle">Ubicación perfecta</h4>
                     </div>
                     <p>Disfrutá la calma de una zona residencial sin alejarte del movimiento urbano. Estamos a unos
@@ -106,7 +115,7 @@
                 </div>
                 <div class="infoCard fade-in">
                     <div class="infoCardTitle">
-                        <img src="media/images/cup.svg" alt="Foto descriptiva">
+                        <img src="./media/images/cup.svg" alt="Foto descriptiva">
                         <h4 class="colorTitle">Desayuno que sorprende</h4>
                     </div>
                     <p>Cada mañana te espera un desayuno completo, con productos frescos y opciones que superan las
@@ -114,7 +123,7 @@
                 </div>
                 <div class="infoCard fade-in">
                     <div class="infoCardTitle">
-                        <img src="media/images/heart.svg" alt="Foto descriptiva">
+                        <img src="./media/images/heart.svg" alt="Foto descriptiva">
                         <h4 class="colorTitle">Atención personalizada</h4>
                     </div>
                     <p>No sos un número más. En Andrea Hotel brindamos un trato cálido, humano y dedicado para que tu
@@ -122,7 +131,7 @@
                 </div>
                 <div class="infoCard fade-in">
                     <div class="infoCardTitle">
-                        <img src="media/images/shine.svg" alt="Foto descriptiva">
+                        <img src="./media/images/shine.svg" alt="Foto descriptiva">
                         <h4 class="colorTitle">Confort y limpieza</h4>
                     </div>
                     <p>Cada habitación está preparada con esmero: limpieza impecable, orden y confort para que descanses
@@ -133,7 +142,6 @@
             </div>
         </section>
     </main>
-
     <footer>
         <div class="whatsapp">
             <a href="http://wa.me/+5492983463576"><img src="media/images/whatsapp.svg" alt="Whatsapp"></a>
@@ -176,8 +184,11 @@
             <p>Página hecha por <a href="https://www.instagram.com/tuziodj/">Tuzio</a></p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/navbar.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="./js/imgCards.js"></script>
 </body>
 
 </html>

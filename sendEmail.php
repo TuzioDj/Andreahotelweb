@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         // Remitente y destinatario
         $mail->setFrom('info@andreahotel.com.ar', 'Andrea Hotel');
-        $mail->addAddress('tuzioxd@gmail.com'); // Quiero que le llegue a la dueña
+        $mail->addAddress('andreahotel@gmail.com'); // Quiero que le llegue a la dueña
 
         // Contenido del correo
         $mail->isHTML(true);

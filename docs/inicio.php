@@ -22,7 +22,16 @@
         </section>
 
         <section class="columns">
-            <img class="imgRelationAspect1-1" src="./media/images/photos/Inicio/DSC_5239.webp" alt="Frente de hotel">
+            <div class="carousel imgRelationAspect1-1 fade-in">
+                <div class="carouselTrack">
+                    <img src="media/images/photos/Inicio/DSC_5273.webp" alt="Frente de hotel">
+                    <img src="media/images/photos/Inicio/DSC_5239.webp" alt="Frente de hotel">
+                    <img src="media/images/photos/Inicio/DSC_4663-HDR.webp" alt="Frente de hotel">
+                </div>
+                <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
+                <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
+                <div class="carouselDots"></div>
+            </div>
             <div class="columnTextLeft">
                 <h2 class="colorTitle fade-in">Las mejores habitaciones de la ciudad</h2>
                 <p class="fade-in">Espacios renovados, diseñados para el máximo confort. Cada habitación es una invitación al descanso, con estilo y funcionalidad pensados para vos. Y para empezar el día de la mejor manera, te espera un desayuno único, preparado para deleitar todos tus sentidos. Tu experiencia ideal te espera.</p>
