@@ -41,13 +41,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Host = 'mail.andreahotel.com.ar';
         $mail->SMTPAuth = true;
         $mail->Username = 'info@andreahotel.com.ar';
-        $mail->Password = 'AH7500tsas!';
+        $mail->Password = 'AH7500tresa!';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
         // Remitente y destinatario
         $mail->setFrom('info@andreahotel.com.ar', 'Andrea Hotel');
-        $mail->addAddress('andreahotel@gmail.com'); // Quiero que me llegue a mi
+        $mail->addAddress('tuzioxd@gmail.com'); // Quiero que le llegue a la dueña
 
         // Contenido del correo
         $mail->isHTML(true);

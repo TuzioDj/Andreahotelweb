@@ -1,7 +1,7 @@
     <main>
         <section id="welcome">
             <div class="welcomeContainer">
-                <img class="principalImg delay-img" src="./media/images/habitacionPrueba.jpeg" alt="Habitacion bienvenida">
+                <img class="principalImg delay-img" src="media/images/photos/Ubicacion/DSC_5185-HDR.webp" alt="Habitacion bienvenida">
                 <div class="centredTextInImage">
                     <h1 class="visuallyHidden">¿Dónde queda Andrea Hotel?</h1>
                     <h2 class="fade-in">Ubicación</h2>

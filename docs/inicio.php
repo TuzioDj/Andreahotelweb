@@ -1,7 +1,7 @@
     <main>
         <section id="welcome">
             <div class="welcomeContainer">
-                <img class="principalImg delay-img" src="./media/images/frente-2.jpg" alt="Habitacion bienvenida">
+                <img class="principalImg delay-img" src="./media/images/photos/Inicio/frente.webp" alt="Habitacion bienvenida">
                 <div class="centredTextInImage">
                     <h1 class="logoTitle fade-in">
                         <img src="./media/images/logo.svg" alt="Andrea hotel. Estilo, descanso y ubicación ideal">
@@ -22,11 +22,10 @@
         </section>
 
         <section class="columns">
-            <img class="imgRelationAspect1-1" src="./media/images/frenteHotel.jpg" alt="Frente de hotel">
+            <img class="imgRelationAspect1-1" src="./media/images/photos/Inicio/DSC_5239.webp" alt="Frente de hotel">
             <div class="columnTextLeft">
                 <h2 class="colorTitle fade-in">Las mejores habitaciones de la ciudad</h2>
-                <p class="fade-in">Espacios renovados, diseñados para ofrecer descanso, estilo y funcionalidad.
-                    Cada habitación, una invitación al confort.</p>
+                <p class="fade-in">Espacios renovados, diseñados para el máximo confort. Cada habitación es una invitación al descanso, con estilo y funcionalidad pensados para vos. Y para empezar el día de la mejor manera, te espera un desayuno único, preparado para deleitar todos tus sentidos. Tu experiencia ideal te espera.</p>
                 <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 fade-in" href="habitaciones">
                     <p>Ver mas</p>
                 </a>

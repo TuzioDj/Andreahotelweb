@@ -1,7 +1,7 @@
     <main>
         <section id="welcome">
             <div class="welcomeContainer">
-                <img class="principalImg delay-img" src="media/images/habitacionPrueba.jpeg" alt="Habitacion bienvenida">
+                <img class="principalImg delay-img" src="media/images/photos/Habitaciones/DSC_5076.webp" alt="Habitacion bienvenida">
                 <div class="centredTextInImage">
                     <h1 class="visuallyHidden">Nuestras habitaciones y espacios en Andrea Hotel</h1>
                     <h2 class="fade-in">Habitaciones</h2>
@@ -25,9 +25,8 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/habitacion1.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion2.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion3.jpg" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/SIMPLE/DSC_5147-HDR_1.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/SIMPLE/HABITACION DOBLE.webp" alt="Frente de hotel">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
@@ -41,7 +40,7 @@
                         estadía tranquila y funcional.</p>
 
                     <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 buttonLeft fade-in"
-                        href="habitaciones">
+                        href="https://api.whatsapp.com/send?phone=+5492983463576&text=Hola,%20estoy%20interesado/a%20en%20la%20Habitacion%20Simple.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%20al%20respecto,%20por%20favor?">
                         <p>La quiero!</p>
                     </a>
                 </div>
@@ -49,9 +48,8 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/habitacion1.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion2.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion3.jpg" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_5170.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_4695.webp" alt="Frente de hotel">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
@@ -65,7 +63,7 @@
                         opción versátil para parejas, amigos o compañeros de viaje.</p>
 
                     <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 buttonLeft fade-in"
-                        href="habitaciones">
+                        href="https://api.whatsapp.com/send?phone=+5492983463576&text=Hola,%20estoy%20interesado/a%20en%20la%20Habitaci%C3%B3n%20Doble.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%20al%20respecto,%20por%20favor?">
                         <p>La quiero!</p>
                     </a>
                 </div>
@@ -73,9 +71,10 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/habitacion1.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion2.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion3.jpg" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5125.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5218.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5128.webp" alt="Frente de hotel">
+
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
@@ -89,7 +88,7 @@
                         ni confort.</p>
 
                     <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 buttonLeft fade-in"
-                        href="habitaciones">
+                        href="https://api.whatsapp.com/send?phone=+5492983463576&text=Hola,%20estoy%20interesado/a%20en%20la%20Habitaci%C3%B3n%20Triple.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%20al%20respecto,%20por%20favor?">
                         <p>La quiero!</p>
                     </a>
                 </div>
@@ -97,9 +96,8 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/habitacion1.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion2.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion3.jpg" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/CUADRUPLE/DSC_4737.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/CUADRUPLE/DSC_4767.webp" alt="Frente de hotel">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
@@ -113,7 +111,7 @@
                         estadía.</p>
 
                     <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 buttonLeft fade-in"
-                        href="habitaciones">
+                        href="https://api.whatsapp.com/send?phone=+5492983463576&text=Hola,%20estoy%20interesado/a%20en%20la%20Habitaci%C3%B3n%20Cu%C3%A1druple.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%20al%20respecto,%20por%20favor?">
                         <p>La quiero!</p>
                     </a>
                 </div>
@@ -121,9 +119,8 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/habitacion1.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion2.jpeg" alt="Frente de hotel">
-                        <img src="media/images/habitacion3.jpg" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_5170.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5125.webp" alt="Frente de hotel">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
@@ -137,7 +134,7 @@
                         cercanía y comodidad en viajes familiares o grupales.</p>
 
                     <a class="button buttonSwipeLeft buttonSwipeLeft--primaryColor-700 buttonLeft fade-in"
-                        href="habitaciones">
+                        href="https://api.whatsapp.com/send?phone=+5492983463576&text=Hola,%20estoy%20interesado/a%20en%20el%20combo%20Habitaci%C3%B3n%20Doble+Triple.%20%C2%BFPodr%C3%ADas%20darme%20m%C3%A1s%20informaci%C3%B3n%20al%20respecto,%20por%20favor?">
                         <p>La quiero!</p>
                     </a>
                 </div>
