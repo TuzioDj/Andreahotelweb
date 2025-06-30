@@ -427,12 +427,21 @@ a {
     text-align: end;
 }
 
+.columns .icon {
+    width: 1.3em;
+}
+
+.colorTitle span {
+    vertical-align: middle;
+}
+
+
 /* PC */
 
 @media only screen and (min-width: 768px) {
     .columns {
         flex-direction: row;
-        max-height: calc(100vh - 100px);
+        max-height: 90vh;
     }
 
     .columns img {
@@ -442,7 +451,7 @@ a {
     .columnTextLeft {
         min-height: auto;
         height: auto;
-        padding: 5vw;
+        padding: 4vw;
     }
 
     .columns:nth-child(even) {
@@ -455,6 +464,10 @@ a {
 
     .contact .columnTextLeft {
         min-height: 100%;
+    }
+
+    .columns .icon {
+        width: 1.5em;
     }
 
 }
@@ -589,22 +602,22 @@ a {
 }
 
 .contactFormInput label {
-  position: absolute;
-  font-size: 1em;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  transition: 0.3s ease;
-  color: var(--primaryColor-400);
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    color: var(--primaryColor-400);
 }
 
-.contactFormInput input:focus ~ label,
-.contactFormInput input.notEmpty ~ label,
-.contactFormInput textarea:focus ~ label,
-.contactFormInput textarea.notEmpty ~ label {
-  transform: translateY(-100%);
-  color: var(--primaryColor-700);
-  font-size: 0.9em;
+.contactFormInput input:focus~label,
+.contactFormInput input.notEmpty~label,
+.contactFormInput textarea:focus~label,
+.contactFormInput textarea.notEmpty~label {
+    transform: translateY(-100%);
+    color: var(--primaryColor-700);
+    font-size: 0.9em;
 }
 
 .contactFormUnderline {
@@ -624,14 +637,15 @@ a {
     transform: scaleX(1);
 }
 
-.contactFormInput input.hasError~.contactFormUnderline{
+.contactFormInput input.hasError~.contactFormUnderline {
     background: red;
 }
-.contactFormInput label.hasError{
+
+.contactFormInput label.hasError {
     color: red !important;
 }
 
-.contactFormInput .errorText{
+.contactFormInput .errorText {
     margin-top: 2px;
     color: red;
     text-align: left;
@@ -639,7 +653,7 @@ a {
     font-weight: 500;
 }
 
-.contactForm #formStatus{
+.contactForm #formStatus {
     position: absolute;
     bottom: 0;
     transform: translateY(110%);
@@ -649,20 +663,22 @@ a {
 
 }
 
-.contactForm #formStatus.success{
+.contactForm #formStatus.success {
     color: green;
 }
-.contactForm #formStatus.error{
+
+.contactForm #formStatus.error {
     color: red;
 }
 
 @media only screen and (min-width: 768px) {
-    .contactFormContainer{
+    .contactFormContainer {
         width: 50%;
         aspect-ratio: 1 / 1;
         justify-content: center;
     }
-    .contactFormRow{
+
+    .contactFormRow {
         flex-direction: row;
         gap: 16px;
     }

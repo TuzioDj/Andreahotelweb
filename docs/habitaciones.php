@@ -25,15 +25,21 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/photos/Habitaciones/SIMPLE/DSC_5147-HDR_1.webp" alt="Frente de hotel">
-                        <img src="media/images/photos/Habitaciones/SIMPLE/HABITACION DOBLE.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_5170.webp" alt="Imagen de la habitación simple">
+                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_4695.webp" alt="Imagen de la habitación simple">
+                        <img src="media/images/photos/Habitaciones/SIMPLE/DSC_5147-HDR_1.webp" alt="Imagen de la habitación simple">
+                        <img src="media/images/photos/Habitaciones/SIMPLE/HABITACION DOBLE.webp" alt="Imagen de la habitación simple">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
                     <div class="carouselDots"></div>
                 </div>
                 <div class="columnTextCenter columnTextLeft">
-                    <h4 class="colorTitle hToh3 fade-in">Habitación Simple</h4>
+
+                    <h4 class="colorTitle hToh3 fade-in">Habitación Simple
+                        <span> <img class="icon" src="media/images/petFriendly.svg" alt="Somos pet friendly">
+                        </span>
+                    </h4>
 
                     <p class="fade-in">Ideal para quienes viajan solos o por trabajo.
                         Un espacio práctico y confortable que garantiza un buen descanso, con todo lo necesario para una
@@ -48,15 +54,18 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_5170.webp" alt="Frente de hotel">
-                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_4695.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/MATRIMONIAL/DSC_4749.webp" alt="Imagen de la habitación doble">
+                        <img src="media/images/photos/Habitaciones/MATRIMONIAL/DSC_5077.webp" alt="Imagen de la habitación doble">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
                     <div class="carouselDots"></div>
                 </div>
                 <div class="columnTextCenter columnTextLeft">
-                    <h4 class="colorTitle hToh3 fade-in">Habitación Doble</h4>
+                    <h4 class="colorTitle hToh3 fade-in">Habitación Doble
+                        <span> <img class="icon" src="media/images/petFriendly.svg" alt="Somos pet friendly">
+                        </span>
+                    </h4>
 
                     <p class="fade-in">Cómoda y luminosa, perfecta para dos personas.
                         Equipada con una cama matrimonial o dos camas individuales (sujeto a disponibilidad), es una
@@ -71,9 +80,9 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5125.webp" alt="Frente de hotel">
-                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5218.webp" alt="Frente de hotel">
-                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5128.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5125.webp" alt="Imagen de la habitación triple">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5218.webp" alt="Imagen de la habitación triple">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5128.webp" alt="Imagen de la habitación triple">
 
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
@@ -81,7 +90,10 @@
                     <div class="carouselDots"></div>
                 </div>
                 <div class="columnTextCenter columnTextLeft">
-                    <h4 class="colorTitle hToh3 fade-in">Habitación Triple</h4>
+                    <h4 class="colorTitle hToh3 fade-in">Habitación Triple
+                        <span> <img class="icon" src="media/images/petFriendly.svg" alt="Somos pet friendly">
+                        </span>
+                    </h4>
 
                     <p class="fade-in">Amplia y bien distribuida, ideal para grupos pequeños o familias.
                         Con tres camas individuales, esta habitación ofrece comodidad y espacio sin resignar privacidad
@@ -96,15 +108,19 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/photos/Habitaciones/CUADRUPLE/DSC_4737.webp" alt="Frente de hotel">
-                        <img src="media/images/photos/Habitaciones/CUADRUPLE/DSC_4767.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/CUADRUPLE/DSC_4737.webp" alt="Imagen de la habitación cuádruple">
+                        <img src="media/images/photos/Habitaciones/CUADRUPLE/DSC_4767.webp" alt="Imagen de la habitación cuádruple">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
                     <div class="carouselDots"></div>
                 </div>
                 <div class="columnTextCenter columnTextLeft">
-                    <h4 class="colorTitle hToh3 fade-in">Habitación Cuádruple</h4>
+
+                    <h4 class="colorTitle hToh3 fade-in">Habitación Cuádruple
+                        <span> <img class="icon" src="media/images/petFriendly.svg" alt="Somos pet friendly">
+                        </span>
+                    </h4>
 
                     <p class="fade-in">Equipada con una cama matrimonial y una cama cucheta, esta opción ofrece una distribución
                         funcional del espacio, ideal para quienes priorizan el confort y la practicidad durante su
@@ -119,15 +135,18 @@
             <div class="columns">
                 <div class="carousel imgRelationAspect4-3 fade-in">
                     <div class="carouselTrack">
-                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_5170.webp" alt="Frente de hotel">
-                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5125.webp" alt="Frente de hotel">
+                        <img src="media/images/photos/Habitaciones/DOBLE/DSC_5170.webp" alt="Imagen de la habitación doble">
+                        <img src="media/images/photos/Habitaciones/TRIPLE/DSC_5125.webp" alt="Imagen de la habitación triple">
                     </div>
                     <button class="carouselButton prev"><img src="media/images/carouselLeft.svg" alt="Imagen anterior carrusel"></button>
                     <button class="carouselButton next"><img src="media/images/carouselRight.svg" alt="Imagen siguiente carrusel"></button>
                     <div class="carouselDots"></div>
                 </div>
                 <div class="columnTextCenter columnTextLeft">
-                    <h4 class="colorTitle hToh3 fade-in">Habitación Doble + Triple</h4>
+                    <h4 class="colorTitle hToh3 fade-in">Habitación Doble + Triple
+                        <span> <img class="icon" src="media/images/petFriendly.svg" alt="Somos pet friendly">
+                        </span>
+                    </h4>
 
                     <p class="fade-in">Una combinación ideal para grupos más numerosos.
                         Ofrecemos la posibilidad de reservar habitaciones dobles y triples contiguas, garantizando
